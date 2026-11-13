@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: identity-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/identity_db
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  # Secret key tối thiểu 256 bits cho HS256
+  secret: thien-tay-nhan-809671-363636-676767-identity-service-secret-key-hs256
+  # Access token sống 15 phút (15 * 60 * 1000 ms = 900,000 ms)
+  access-token-expiration: 900000
+  # Refresh token sống 7 ngày (7 * 24 * 60 * 60 * 1000 ms = 604,800,000 ms)
+  refresh-token-expiration: 604800000

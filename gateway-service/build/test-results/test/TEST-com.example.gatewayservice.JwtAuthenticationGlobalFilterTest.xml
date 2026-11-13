@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.gatewayservice.JwtAuthenticationGlobalFilterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T13:29:25.406Z" hostname="HUY" time="4.302">
+  <properties/>
+  <testcase name="Token hợp lệ: trích xuất role và gắn vào Header X-User-Role trước khi forward" classname="com.example.gatewayservice.JwtAuthenticationGlobalFilterTest" time="4.107"/>
+  <testcase name="Chặn ngay lập tức khi không đính kèm Authorization header (401 Unauthorized)" classname="com.example.gatewayservice.JwtAuthenticationGlobalFilterTest" time="0.063"/>
+  <testcase name="Chặn ngay lập tức khi token sai chữ ký (401 Unauthorized)" classname="com.example.gatewayservice.JwtAuthenticationGlobalFilterTest" time="0.031"/>
+  <testcase name="Chặn ngay lập tức khi token hết hạn (401 Unauthorized)" classname="com.example.gatewayservice.JwtAuthenticationGlobalFilterTest" time="0.047"/>
+  <system-out><![CDATA[20:29:29.374 [Test worker] INFO com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Tr?m gác biên phòng] ?ang ki?m tra JWT cho request: /api/courses
+20:29:29.507 [Test worker] INFO com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Cho qua] Token h?p l?! User: student1, Role: STUDENT
+20:29:29.570 [Test worker] INFO com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Tr?m gác biên phòng] ?ang ki?m tra JWT cho request: /api/courses
+20:29:29.571 [Test worker] WARN com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Ch?n] Không tìm th?y Header Authorization
+20:29:29.638 [Test worker] INFO com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Tr?m gác biên phòng] ?ang ki?m tra JWT cho request: /api/courses
+20:29:29.657 [Test worker] WARN com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Ch?n] Sai ch? ký Token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+20:29:29.682 [Test worker] INFO com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Tr?m gác biên phòng] ?ang ki?m tra JWT cho request: /api/courses
+20:29:29.702 [Test worker] WARN com.example.gatewayservice.filter.JwtAuthenticationGlobalFilter -- --> [Gateway Ch?n] Token ?ã h?t h?n: JWT expired at 2026-11-13T13:29:24Z. Current time: 2026-11-13T13:29:29Z, a difference of 5692 milliseconds.  Allowed clock skew: 0 milliseconds.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

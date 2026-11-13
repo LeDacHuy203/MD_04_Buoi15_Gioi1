@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.identityservice.AuthServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-13T13:17:46.606Z" hostname="HUY" time="5.078">
+  <properties/>
+  <testcase name="Đăng nhập thất bại khi không tìm thấy username sẽ ném BadCredentialsException" classname="com.example.identityservice.AuthServiceTest" time="4.904"/>
+  <testcase name="Đăng nhập thành công trả về cả Access Token và Refresh Token, lưu Refresh Token vào DB" classname="com.example.identityservice.AuthServiceTest" time="0.112"/>
+  <testcase name="Đăng nhập thất bại khi sai mật khẩu sẽ ném BadCredentialsException" classname="com.example.identityservice.AuthServiceTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/course-service/buoi15.course-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/course-service/buoi15.course-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway-service/buoi15.gateway-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway-service/buoi15.gateway-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway-service/buoi15.gateway-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway-service/buoi15.gateway-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/identity-service/buoi15.identity-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/identity-service/buoi15.identity-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/identity-service/buoi15.identity-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/identity-service/buoi15.identity-service.test.iml" />
+    </modules>
+  </component>
+</project>

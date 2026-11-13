@@ -1,0 +1,4 @@
+rootProject.name = 'buoi15'
+include 'identity-service'
+include 'gateway-service'
+include 'course-service'
